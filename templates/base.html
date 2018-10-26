@@ -1,11 +1,11 @@
-{% load staticfiles %}
 <!DOCTYPE html>
+{% load static %}
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <!-- links -->
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
     <!-- FlexSlider -->
     <link rel="stylesheet" href="{% static 'css/flexslider.css' %}" type="text/css">
     <!-- end links -->
@@ -30,12 +30,12 @@
     {% endblock %}
 
     {% block content %}
-    <h5>Este es el contenido del archivo base</h5>
+    <h2>contenido base</h2>
     {% endblock %}
 
     {% block footer %}
     <footer>
-        <img src="img/footer_img.png" alt="logo_fundacion">
+        <img src="{% static 'img/footer_img.png' %}" alt="logo_fundacion">
         <h4> <span>Todos los derechos reservados Mis Perris &copy;</span></h4>
     </footer>
     {% endblock %}

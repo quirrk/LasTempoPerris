@@ -1,35 +1,37 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block title %}
 Mis Perris
 {% endblock %}
 
 {% block content %}
-<div class="flexslider">
-    <ul class="slides">
-        <li>
-            <img src="img/carrusel/pic1.jpg" alt="foto-mascota-1">
-            <section class="flex-caption"></section>
-        </li>
-        <li>
-            <img src="img/carrusel/pic2.jpg" alt="foto-mascota-2">
-            <section class="flex-caption"></section>
-        </li>
-        <li>
-            <img src="img/carrusel/pic3.jpg" alt="foto-mascota-3">
-            <section class="flex-caption"></section>
-        </li>
-    </ul>
-</div>
-<div class="text">
-    <div class="div_quienes">
-        <h2>¿Quiénes somos?</h2>
-        <p> Nuestra visión es ser la fundación de animales en riesgo con mayor impacto del país,
-            generando un cambio efectivo en la conciencia de la sociedad para acabar con el abandono,
-            la humillación y el abuso que sufren millones de animales al día. Educando a través de nuestra 
-            gran red de estudiantes y profesionales, lograremos otorgar la oportunidad de un hogar a los callejeros 
-            de Chile.
-        </p>
+<main>
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <img src="{% static 'img/carrusel/pic1.jpg' %}" alt="foto-mascota-1">
+                <section class="flex-caption"></section>
+            </li>
+            <li>
+                <img src="{% static 'img/carrusel/pic2.jpg' %}" alt="foto-mascota-2">
+                <section class="flex-caption"></section>
+            </li>
+            <li>
+                <img src="{% static 'img/carrusel/pic3.jpg' %}" alt="foto-mascota-3">
+                <section class="flex-caption"></section>
+            </li>
+        </ul>
+    </div>
+    <div class="text">
+        <div class="div_quienes">
+            <h2>¿Quiénes somos?</h2>
+            <p> Nuestra visión es ser la fundación de animales en riesgo con mayor impacto del país,
+                generando un cambio efectivo en la conciencia de la sociedad para acabar con el abandono,
+                la humillación y el abuso que sufren millones de animales al día. Educando a través de nuestra 
+                gran red de estudiantes y profesionales, lograremos otorgar la oportunidad de un hogar a los callejeros 
+                de Chile.
+            </p>
+        </div>
     </div>
     <div class="div_mision">
         <h2>Nuestra misión</h2>
@@ -39,6 +41,6 @@ Mis Perris
             esta labor.
         </p>
     </div>
-</div>
+    </div>
 </main>
 {% endblock %}
