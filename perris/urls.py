@@ -1,7 +1,7 @@
 from django.urls import path, include
-from .views import index, form
+from .views import index, persona_form
 
 urlpatterns = [
-     path('', index),
-     path('formulario/', form)
+     path('', index, name='index'),
+     path('formulario/', persona_form, name='persona_crear'),
 ]
