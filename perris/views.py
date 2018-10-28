@@ -5,13 +5,15 @@ from .forms import PersonaForm
 def index(request):
     return render(request, 'index.html')
 
-def persona_form(request):
-    if request.method == 'POST':
+def voluntario(request):
+    if request.method == "POST":
         form = PersonaForm(request.POST)
         if form.is_valid():
-            form.save()
-        return redirect('perris:index')
-    else:
-        form = PersonaForm()
+            post = form.save(commit=False)
+            post.author = request.user
+    form = PersonaForm()
+    return render(request, 'voluntariado.html', {'form': form})
 
-    return render(request, 'voluntariado.html', {'form':form})
+
+def mascotas(request):
+    return render(request, 'mascotas.html')

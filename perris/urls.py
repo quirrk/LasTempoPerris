@@ -1,7 +1,8 @@
 from django.urls import path, include
-from .views import index, persona_form
+from .views import index, voluntario, mascotas
 
 urlpatterns = [
      path('', index, name='index'),
-     path('formulario/', persona_form, name='persona_crear'),
+     path('registro', voluntario, name='voluntario'),
+     path('mascotas', mascotas, name='mascotas'),
 ]
