@@ -132,7 +132,6 @@ footer h4{
     color: rgb(148, 148, 148);
 }
 
-
 @media screen and (max-width: 768px){
     header{
         display: none;

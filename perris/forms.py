@@ -6,6 +6,7 @@ class PersonaForm(forms.ModelForm):
         model = Persona
 
         fields = [
+            'rut',
             'nombre',
             'apellidos',
             'edad',

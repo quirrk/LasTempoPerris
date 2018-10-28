@@ -1,0 +1,25 @@
+.form{
+    padding: 50px;
+}
+
+p{
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+}
+
+#id_direccion{
+    float: right;
+}
+
+button{
+    float: left;
+    margin-top: 50px;
+    margin-left: 130px;
+    clear: left;
+}
+
+footer{
+    border: none;
+}
