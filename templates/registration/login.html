@@ -17,6 +17,11 @@ Iniciar Sesión
             {% csrf_token %}
             {{ form.as_p }}
             <button type="submit" id="btn_login"> Iniciar Sesión</button>
+            {% if user.is_authenticated %}
+                
+            {% else %}
+                <p><a href="{% url 'password_reset' %}">Reestablecer contraseña</a></p> 
+            {% endif %}
         </form>
     </div>
 </main>
