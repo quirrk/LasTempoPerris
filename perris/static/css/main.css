@@ -14,7 +14,6 @@ body{
 header{
     font-size: 16px;
     background: rgb(59, 179, 194);
-    text-align: center;
     position: fixed;
     top: 0;
     width: 100%;
@@ -25,12 +24,84 @@ header h3{
     font-family: 'Pacifico', cursive;
     margin: 0 0 0 5px;
     color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    display: inline-block;
 }
 
 header span{
     font-size: 10px;
     font-family: 'Open Sans', sans-serif;
 }
+
+
+/* ini if block */
+
+#usr_h3{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 16px;
+    margin-top: 3px; 
+}
+#a_head_login {
+    text-decoration:none;
+    color: white;
+    float: right;
+    border:none;
+    height: 32px;
+    box-sizing: border-box;
+    padding: 4px 10px 4px 10px;
+}
+
+#a_head_login:hover{
+    background-color: rgb(53, 149, 158);
+}
+
+#logout_a_head{
+    float: right;
+    text-decoration: none;
+    color: white;
+    height: 32px;
+    box-sizing: border-box;
+    padding: 4px 10px 4px 10px;
+}
+
+#logout_a_head:hover{
+    background-color: rgb(53, 149, 158);
+}
+/*-------------------TOGGLE-----------------------------*/
+
+#usr_h3_tog{
+    float: right;
+    color: black;
+    font-size: 20px;
+}
+
+#a_tog_login {
+    text-decoration:none;
+    color: black;
+    float: right;
+    border:none;
+    height: 32px;
+    box-sizing: border-box;
+    padding: 4px 10px 4px 10px;
+    margin-right: -20px;
+    font-size: 16px;
+}
+
+#a_tog_login:hover{
+    background-color: white;
+}
+
+#logout_a_tog {
+    text-decoration: none;
+    color: black;
+    float: right;
+    height: 40px;
+    font-size: 25px;
+    margin-top: -3px;
+}
+/* end if block*/
+
 
 nav{
     width: 100%;
@@ -132,7 +203,9 @@ footer h4{
     color: rgb(148, 148, 148);
 }
 
+
 @media screen and (max-width: 768px){
+
     header{
         display: none;
     }
@@ -189,4 +262,7 @@ footer h4{
         box-sizing: border-box;
         padding: 30px;
     }
+
+    
+    
 }
