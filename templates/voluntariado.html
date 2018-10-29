@@ -11,9 +11,16 @@ Registro Voluntarios
 {% endblock %}
 
 {% block content %}
-    <h1>Nuevo Voluntario</h1>
-    <form method="POST" class="form">{% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Enviar</button>
-    </form>
+
+    <main>
+        <div class="div_form">
+            <h1>Nuevo Voluntario</h1>
+            <form method="POST" class="form"> {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="save btn btn-default" id="btn_form"> <b>Enviar</b> </button>
+            </form>
+        </div>
+        
+    </main>
+    
 {% endblock %}
