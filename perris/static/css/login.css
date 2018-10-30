@@ -17,7 +17,7 @@ main{
 }
 
 #btn_login{
-    margin-bottom: 15px;
+    margin-bottom: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     height: 35px;
@@ -57,7 +57,8 @@ h2{
     margin-bottom: 30px;
 }
 
-a{
+.a_rest{
+
     font-size: 12px;
 }
 

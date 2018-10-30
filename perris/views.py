@@ -23,8 +23,10 @@ def voluntario(request):
 
 
 def mascotas(request):
-    perris=Perro.objects.all()
-    return render(request, 'mascotas.html',{'perris':perris})
+    perrisD=Perro.objects.filter(estado__contains='DI')
+    perrisA=Perro.objects.filter(estado__contains='AD')
+    perrisR=Perro.objects.filter(estado__contains='RE')
+    return render(request, 'mascotas.html',{'perrisD':perrisD,'perrisA':perrisA,'perrisR':perrisR})
 
 
 

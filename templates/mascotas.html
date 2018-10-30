@@ -8,15 +8,35 @@
 {% block content %}
 
 <main>
-    <div class="div_galeria">
+    <div class="div_galeria_dispoonible">
         <h2>Perros disponibles</h2>
-        {% for todo in perris%}
+        {% for todo in perrisD%}
             <div class="div_galeria_cont">
                 <h3>{{todo.nombre}}</h3>
                 <p><img src="/media/{{todo.foto}}" alt="foto_perro"></p>
             </div>
         {% endfor %}
     </div>
+
+    <div class="div_galeria_rescatado">
+        <h2>Perros rescatados</h2>
+        {% for todo in perrisR%}
+            <div class="div_galeria_cont">
+                <h3>{{todo.nombre}}</h3>
+                <p><img src="/media/{{todo.foto}}" alt="foto_perro"></p>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="div_galeria_adoptado">
+        <h2>Perros adoptados</h2>
+        {% for todo in perrisA%}
+            <div class="div_galeria_cont">
+                <h3>{{todo.nombre}}</h3>
+                <p><img src="/media/{{todo.foto}}" alt="foto_perro"></p>
+            </div>
+        {% endfor %}
+    </div>
+
 </main>
 
 

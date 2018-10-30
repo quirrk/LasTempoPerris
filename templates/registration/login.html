@@ -20,7 +20,7 @@ Iniciar Sesión
             {% if user.is_authenticated %}
                 
             {% else %}
-                <p><a href="{% url 'password_reset' %}">Reestablecer contraseña</a></p> 
+                <p><a class="a_rest" href="{% url 'password_reset' %}">Reestablecer contraseña</a></p> 
             {% endif %}
         </form>
     </div>
