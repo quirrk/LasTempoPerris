@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Persona(models.Model):
-    rut = models.CharField(max_length=12)
+    rut = models.CharField(max_length=10)
     nombre = models.CharField(max_length=50)
     apellidos = models.CharField(max_length=70)
     edad = models.IntegerField()
@@ -24,6 +24,5 @@ class Perro(models.Model):
     descripcion = models.TextField()
     estado = models.CharField(max_length=2, choices=estado_opc)
     foto = models.ImageField(upload_to='media/rescatados/')
-    persona = models.ForeignKey(Persona, null=True, blank=True, on_delete=models.CASCADE)
     def __str__(self):
         return self.nombre

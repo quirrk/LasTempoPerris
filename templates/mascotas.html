@@ -1,2 +1,23 @@
 {% extends 'base.html' %}
 {% load static %}
+
+{% block extrastatic %}
+<style> .div_galeria{margin-top:200px;}</style>
+{% endblock %}
+
+{% block content %}
+
+<main>
+    <div class="div_galeria">
+        <h2>Perros disponibles</h2>
+        {% for todo in perris%}
+            <div class="div_galeria_cont">
+                <h3>{{todo.nombre}}</h3>
+                <p><img src="/media/{{todo.foto}}" alt="foto_perro"></p>
+            </div>
+        {% endfor %}
+    </div>
+</main>
+
+
+{% endblock %}
