@@ -2,41 +2,49 @@
 {% load static %}
 
 {% block extrastatic %}
-<style> .div_galeria{margin-top:200px;}</style>
+<link rel="stylesheet" href="{% static 'css/mascotas.css' %}" type="text/css">
 {% endblock %}
 
 {% block content %}
 
 <main>
-    <div class="div_galeria_dispoonible">
-        <h2>Perros disponibles</h2>
-        {% for todo in perrisD%}
-            <div class="div_galeria_cont">
-                <h3>{{todo.nombre}}</h3>
-                <p><img src="/media/{{todo.foto}}" alt="foto_perro"></p>
-            </div>
-        {% endfor %}
+    <div class="div_conten">
+            <h2 class="h2_gal1 h2">Perros disponibles</h2>
+        <div class="div_galeria_disponible flex">
+            
+            {% for todo in perrisD%}
+                <div class="div_galeria_cont">
+                    <p><img src="/media/{{todo.foto}}" alt="foto_perro"></p>
+                    <p>Nombre: {{todo.nombre}}</p>
+                    <p>Estado: {{todo.estado}}</p>
+                </div>
+            {% endfor %}
+        </div>
+        <h2 class="h2_gal2 h2">Perros rescatados</h2>
+        <div class="div_galeria_rescatado flex">
+            
+            {% for todo in perrisR%}
+                <div class="div_galeria_cont">
+                    <p><img src="/media/{{todo.foto}}" alt="foto_perro"></p>
+                    <p>Nombre: {{todo.nombre}}</p>
+                    <p>Estado: {{todo.estado}}</p>
+                </div>
+            {% endfor %}
+        </div>
+        <h2 class="h2_gal3 h2">Perros adoptados</h2>
+        <div class="div_galeria_adoptado flex">
+            
+            {% for todo in perrisA%}
+                <div class="div_galeria_cont">
+                    <p><img src="/media/{{todo.foto}}" alt="foto_perro"></p>
+                    <p>Nombre: {{todo.nombre}}</p>
+                    <p>Estado: {{todo.estado}}</p>
+                </div>
+            {% endfor %}
+        </div>
+            
     </div>
-
-    <div class="div_galeria_rescatado">
-        <h2>Perros rescatados</h2>
-        {% for todo in perrisR%}
-            <div class="div_galeria_cont">
-                <h3>{{todo.nombre}}</h3>
-                <p><img src="/media/{{todo.foto}}" alt="foto_perro"></p>
-            </div>
-        {% endfor %}
-    </div>
-    <div class="div_galeria_adoptado">
-        <h2>Perros adoptados</h2>
-        {% for todo in perrisA%}
-            <div class="div_galeria_cont">
-                <h3>{{todo.nombre}}</h3>
-                <p><img src="/media/{{todo.foto}}" alt="foto_perro"></p>
-            </div>
-        {% endfor %}
-    </div>
-
+    
 </main>
 
 
