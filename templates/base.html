@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     {% block extrastatic %}
     {% endblock %}
-    <title>{% block title %} Mis Perris {% endblock %}</title>
+    <title>{% block title %} ReciclApp {% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
 </head>
@@ -13,11 +13,11 @@
     {% block header %}
     <header>
         {% if user.is_authenticated %}
-            <h3>Mis Perris <span>&copy;</span></h3>
+            <h3>ReciclApp <span>&copy;</span></h3>
             <h3 id="usr_h3"> | <i class="fa fa-user-circle"></i> {{ user.username|title }} </h3>
             <a id="logout_a_head" href="{% url 'logout' %}"> <i class="fa fa-sign-out"></i> <b> Cerrar Sesión</b>  </a>
         {% else %}
-            <h3>Mis Perris <span>&copy;</span></h3>
+            <h3>ReciclApp <span>&copy;</span></h3>
             <a id="a_head_login" href="{% url 'login' %}"> <i class="fa fa-sign-out"></i> <b>Iniciar Sesión</b> </a>
         {% endif %}
         
