@@ -15,13 +15,13 @@
     height: 35px;
     padding: 0 15px 0 15px;
     color: white;
-    background-color: rgb(59, 179, 194);
+    background-color: rgb(123, 199, 99);;
     border: none; 
     margin-bottom: 15px;  
 }
 
 .btn_correo1:hover{
-    background-color: rgb(53, 149, 158);
+    background-color: rgb(97, 160, 78);;
 }
 
 .div_pass_reset
@@ -35,14 +35,14 @@
     margin-bottom: 30px; 
     text-align: center;
     position: relative;
-    border-top: 40px solid rgb(59, 179, 194);
+    border-top: 40px solid rgb(123, 199, 99);
 }
 
 input{
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 2px solid rgb(59, 179, 194);
+    border-bottom: 2px solid rgb(123, 199, 99);
     height: 30px;
 }
 

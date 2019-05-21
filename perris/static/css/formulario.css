@@ -31,12 +31,12 @@ label{
     height: 35px;
     padding: 0 15px 0 15px;
     color: white;
-    background-color: rgb(59, 179, 194);
+    background-color: rgb(123, 199, 99);
     border: none;
 }
 
 #btn_form:hover{
-    background-color: rgb(53, 149, 158);
+    background-color: rgb(97, 156, 79);
 }
 
 
@@ -48,7 +48,7 @@ label{
     margin-left: auto;
     max-width: 400px;
     border:1px solid  rgb(228, 228, 228);
-    border-top: 40px solid rgb(59, 179, 194);
+    border-top: 40px solid rgb(123, 199, 99);
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.123);
     margin-bottom: 30px;
 }

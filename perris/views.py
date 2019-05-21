@@ -6,7 +6,9 @@ from django.shortcuts import redirect
 # Create your views here.
 def index(request):
     return render(request, 'index.html')
-    
+
+def video(request):
+    return render(request, 'mascotas.html')
 
 @login_required
 def voluntario(request):
@@ -19,6 +21,4 @@ def voluntario(request):
     else:
         form = PersonaForm()
     return render(request, 'voluntariado.html', {'form': form})
-
-
 
