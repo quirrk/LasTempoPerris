@@ -15,7 +15,7 @@ def voluntario(request):
         if form.is_valid():
             Persona = form.save(commit=False)
             Persona.save()
-            return redirect('mascotas')
+            return redirect('index.html')
     else:
         form = PersonaForm()
     return render(request, 'voluntariado.html', {'form': form})
