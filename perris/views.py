@@ -4,6 +4,10 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect
 
 # Create your views here.
+
+def punto(request):
+    return render(request, 'puntos.html')
+
 def index(request):
     return render(request, 'index.html')
 
@@ -17,7 +21,7 @@ def voluntario(request):
         if form.is_valid():
             Persona = form.save(commit=False)
             Persona.save()
-            return redirect('index.html')
+            return redirect('/')
     else:
         form = PersonaForm()
     return render(request, 'voluntariado.html', {'form': form})
