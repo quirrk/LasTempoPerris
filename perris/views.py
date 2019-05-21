@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from .forms import PersonaForm
-from django.contrib.auth.decorators import login_required
-from .models import Perro
+from django.contrib.auth.decorators import login_required}
 from django.shortcuts import redirect
 
 # Create your views here.
@@ -20,13 +19,6 @@ def voluntario(request):
     else:
         form = PersonaForm()
     return render(request, 'voluntariado.html', {'form': form})
-
-
-def mascotas(request):
-    perrisD=Perro.objects.filter(estado__contains='DI')
-    perrisA=Perro.objects.filter(estado__contains='AD')
-    perrisR=Perro.objects.filter(estado__contains='RE')
-    return render(request, 'mascotas.html',{'perrisD':perrisD,'perrisA':perrisA,'perrisR':perrisR})
 
 
 
